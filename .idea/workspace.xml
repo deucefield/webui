@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f259e25-c0ce-43ae-9d68-039e4ddf4a41" name="Changes" comment="homework #4">
+    <list default="true" id="5f259e25-c0ce-43ae-9d68-039e4ddf4a41" name="Changes" comment="homework #5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,33 +42,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.lesson3.MainApp" />
-      <module name="webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworks.lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeworks.lesson3.Test" />
-      <module name="webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeworks.lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DiaryTests">
     <configuration name="DiaryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webui" />
       <extension name="coverage">
@@ -83,32 +58,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryTests.likeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="asserts.*" />
+          <option name="PATTERN" value="lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="asserts" />
-      <option name="MAIN_CLASS_NAME" value="asserts.SquareTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="lesson4" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
+      <option name="METHOD_NAME" value="likeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.squareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryTests.notificationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="asserts.*" />
+          <option name="PATTERN" value="lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="asserts" />
-      <option name="MAIN_CLASS_NAME" value="asserts.SquareTest" />
-      <option name="METHOD_NAME" value="squareTest(int,int,int)" />
+      <option name="PACKAGE_NAME" value="lesson4" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
+      <option name="METHOD_NAME" value="notificationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTests.recordAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson4" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
+      <option name="METHOD_NAME" value="recordAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTests.recordDel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson4" />
+      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
+      <option name="METHOD_NAME" value="recordDel" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MainApp" />
         <item itemvalue="JUnit.DiaryTests" />
-        <item itemvalue="JUnit.SquareTest.squareTest" />
-        <item itemvalue="JUnit.SquareTest" />
+        <item itemvalue="JUnit.DiaryTests.recordAdd" />
+        <item itemvalue="JUnit.DiaryTests.recordDel" />
+        <item itemvalue="JUnit.DiaryTests.likeTest" />
+        <item itemvalue="JUnit.DiaryTests.notificationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667763165158</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="homework #5">
+      <created>1667950173522</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667950173522</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +208,7 @@
     <MESSAGE value="homework #1" />
     <MESSAGE value="homework #3" />
     <MESSAGE value="homework #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework #4" />
+    <MESSAGE value="homework #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework #5" />
   </component>
 </project>

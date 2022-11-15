@@ -18,11 +18,13 @@ public class DiaryTests {
     Cookie auth;
     WebDriver chrome;
     WebDriverWait chromeWait;
-    String title;
+    static String title;
 
     @BeforeAll
     static void prepare() {
         WebDriverManager.chromedriver().setup();
+
+        title = "testTitle" + new Random().nextInt(10);
     }
 
     @BeforeEach
@@ -33,12 +35,12 @@ public class DiaryTests {
 
         chrome.get("https://diary.ru");
         chrome.manage().addCookie(auth);
+        chrome.navigate().refresh();
     }
 
     @Test
     void recordAdd() {
         chrome.findElement(By.id("writeThisDiary")).click();
-        title = "testTitle" + new Random().nextInt(10);
         chrome.findElement(By.id("postTitle")).sendKeys(title);
 
         chrome.switchTo().frame(chrome.findElement(By.id("message_ifr")));
@@ -62,17 +64,20 @@ public class DiaryTests {
                 .findElement(By.xpath("//a[@class='delPostLink']"))
                 .click();
 
-        new WebDriverWait(chrome, Duration.ofSeconds(2)).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='fade modal in']//button[@class='btn btn-primary on confirm_delete_post']")));
+        chromeWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='fade modal in']//button[@class='btn btn-primary on confirm_delete_post']")));
         chrome.findElement(By.xpath("//div[@class='fade modal in']//button[@class='btn btn-primary on confirm_delete_post']")).click();
 
+        chrome.navigate().refresh();
         Assertions.assertNotEquals(title, chrome.findElement(By.xpath("//div[@class='day-header']/following-sibling::div[1]//a[@class='title']")).getText());
     }
 
     @Test
     void notificationTest() {
+        chrome.get("https://diary.ru/options/site/?reference");
+        chrome.findElement(By.xpath("//button[@class='btn btn-default delAll']")).click();
+
         chrome.findElement(By.id("writeThisDiary")).click();
-        title = "testTitle" + new Random().nextInt(10);
-        chrome.findElement(By.id("postTitle")).sendKeys(title);
+        chrome.findElement(By.id("postTitle")).sendKeys("testTitle");
 
         chrome.switchTo().frame(chrome.findElement(By.id("message_ifr")));
         chrome.findElement(By.id("tinymce")).sendKeys("[J]deucedeuce[/J]");
@@ -83,11 +88,11 @@ public class DiaryTests {
 
         chrome.get("https://diary.ru/options/site/?reference");
 
-        Assertions.assertEquals(title, chrome.findElement(By.xpath("//table[@class='table table-content options_site_reference']//tbody//a[.='" + title + "']")));
+        Assertions.assertEquals("test", chrome.findElement(By.xpath("//table[@class='table table-content options_site_reference']//tbody//a[.='test']")).getText());
     }
 
     @Test
-    void likeTest() {
+    void likeTest() throws InterruptedException {
         int beforeLike;
         int afterLike;
 
@@ -95,6 +100,9 @@ public class DiaryTests {
 
         beforeLike = Integer.valueOf(chrome.findElement(By.xpath("//span[@class='count_likes']")).getText());
         chrome.findElement(By.xpath("//span[@class='count_likes']")).click();
+        // Ждём пока пройдёт анимация. Так как скорость её проигрывания фиксирована, насколько уместно использование слипа здесь?
+        Thread.sleep(500);
+
         afterLike = Integer.valueOf(chrome.findElement(By.xpath("//span[@class='count_likes']")).getText());
         chrome.findElement(By.xpath("//span[@class='count_likes']")).click();                                  // Вот тут у меня очень важный вопрос, ответьте, пожалуйста на странице урока. Этот клик нужен для того чтобы вернуть лайки в исходное,
                                                                                                                             // то есть не нажатое состояние. Но в рамках теста делать выглядит как-то неправильно. Есть ли какой-то условный @AfterTest, который
@@ -102,7 +110,7 @@ public class DiaryTests {
     }
 
     @AfterEach
-    void tearDown() {
+    void tearDown() throws InterruptedException {
         chrome.quit();
     }
 }
