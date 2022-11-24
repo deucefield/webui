@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f259e25-c0ce-43ae-9d68-039e4ddf4a41" name="Changes" comment="homework #5">
+    <list default="true" id="5f259e25-c0ce-43ae-9d68-039e4ddf4a41" name="Changes" comment="homework #6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/ForLikeTestPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MainPageHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MentionsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MyDiaryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/RecordCreatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/DiaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,25 +41,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/study/Java/webui",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.DiaryTests">
-    <configuration name="DiaryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.DiaryTest.notificationTest">
+    <configuration name="DiaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webui" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson4.*" />
+          <option name="PATTERN" value="lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
+      <option name="PACKAGE_NAME" value="lesson6" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.DiaryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTest.likeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson6" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.DiaryTest" />
+      <option name="METHOD_NAME" value="likeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTest.notificationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson6" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.DiaryTest" />
+      <option name="METHOD_NAME" value="notificationTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiaryTest.recordAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webui" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson6" />
+      <option name="MAIN_CLASS_NAME" value="lesson6.DiaryTest" />
+      <option name="METHOD_NAME" value="recordAdd" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,61 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiaryTests.notificationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
-      <option name="METHOD_NAME" value="notificationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiaryTests.recordAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
-      <option name="METHOD_NAME" value="recordAdd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiaryTests.recordDel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="webui" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson4" />
-      <option name="MAIN_CLASS_NAME" value="lesson4.DiaryTests" />
-      <option name="METHOD_NAME" value="recordDel" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DiaryTests" />
-        <item itemvalue="JUnit.DiaryTests.recordAdd" />
-        <item itemvalue="JUnit.DiaryTests.recordDel" />
+        <item itemvalue="JUnit.DiaryTest.notificationTest" />
+        <item itemvalue="JUnit.DiaryTest" />
+        <item itemvalue="JUnit.DiaryTest.likeTest" />
         <item itemvalue="JUnit.DiaryTests.likeTest" />
-        <item itemvalue="JUnit.DiaryTests.notificationTest" />
+        <item itemvalue="JUnit.DiaryTest.recordAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667950173522</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="homework #5">
+      <created>1668544135112</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668544135112</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +223,7 @@
     <MESSAGE value="homework #3" />
     <MESSAGE value="homework #4" />
     <MESSAGE value="homework #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework #5" />
+    <MESSAGE value="homework #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework #6" />
   </component>
 </project>

@@ -110,7 +110,7 @@ public class DiaryTests {
     }
 
     @AfterEach
-    void tearDown() throws InterruptedException {
+    void tearDown() {
         chrome.quit();
     }
 }
