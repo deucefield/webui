@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f259e25-c0ce-43ae-9d68-039e4ddf4a41" name="Changes" comment="homework #6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/ForLikeTestPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MainPageHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MentionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/MyDiaryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/homeworks/lesson6/RecordCreatePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson6/DiaryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson4/DiaryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson6/DiaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson6/DiaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +40,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "D:/study/Java/webui",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DiaryTest.notificationTest">
+  <component name="RunManager" selected="JUnit.DiaryTest.likeTest">
     <configuration name="DiaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webui" />
       <extension name="coverage">
@@ -131,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiaryTest.likeTest" />
         <item itemvalue="JUnit.DiaryTest.notificationTest" />
         <item itemvalue="JUnit.DiaryTest" />
-        <item itemvalue="JUnit.DiaryTest.likeTest" />
         <item itemvalue="JUnit.DiaryTests.likeTest" />
         <item itemvalue="JUnit.DiaryTest.recordAdd" />
       </list>
@@ -204,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668544135112</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="homework #6">
+      <created>1669324060810</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669324060810</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

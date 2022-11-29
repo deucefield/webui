@@ -40,6 +40,7 @@ public class DiaryTest {
     }
 
     @Test
+    @DisplayName("Добавление записи в дневник")
     void recordAdd() {
         String result = new RecordCreatePage(chrome)
                 .goToRecordCreatePage()
@@ -55,6 +56,7 @@ public class DiaryTest {
     }
 
     @Test
+    @DisplayName("Удаление записи")
     void recordDel() {
         MyDiaryPage myDiaryPage = new MyDiaryPage(chrome, chromeWait);
         myDiaryPage.goToMyDiaryPage();
@@ -73,6 +75,7 @@ public class DiaryTest {
     }
 
     @Test
+    @DisplayName("Появление упоминания в журнале упоминаний")
     void notificationTest() {
         String result = new MentionsPage(chrome)
                 .goToMentionsPage()
@@ -90,6 +93,7 @@ public class DiaryTest {
     }
 
     @Test
+    @DisplayName("Прибавление лайков")
     void likeTest() throws InterruptedException {
         ForLikeTestPage forLikeTestPage = new ForLikeTestPage(chrome, chromeWait);
         Integer beforeLike = forLikeTestPage
