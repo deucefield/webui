@@ -2,6 +2,9 @@ package lesson6;
 
 import homeworks.lesson6.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -13,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
-
+@Epic("Тесты Diary.ru")
 public class DiaryTest {
 
     Cookie auth;
@@ -41,6 +44,7 @@ public class DiaryTest {
 
     @Test
     @DisplayName("Добавление записи в дневник")
+    @Severity(SeverityLevel.BLOCKER)
     void recordAdd() {
         String result = new RecordCreatePage(chrome)
                 .goToRecordCreatePage()
@@ -57,6 +61,7 @@ public class DiaryTest {
 
     @Test
     @DisplayName("Удаление записи")
+    @Severity(SeverityLevel.CRITICAL)
     void recordDel() {
         MyDiaryPage myDiaryPage = new MyDiaryPage(chrome, chromeWait);
         myDiaryPage.goToMyDiaryPage();
@@ -76,6 +81,7 @@ public class DiaryTest {
 
     @Test
     @DisplayName("Появление упоминания в журнале упоминаний")
+    @Severity(SeverityLevel.MINOR)
     void notificationTest() {
         String result = new MentionsPage(chrome)
                 .goToMentionsPage()
@@ -94,6 +100,7 @@ public class DiaryTest {
 
     @Test
     @DisplayName("Прибавление лайков")
+    @Severity(SeverityLevel.MINOR)
     void likeTest() throws InterruptedException {
         ForLikeTestPage forLikeTestPage = new ForLikeTestPage(chrome, chromeWait);
         Integer beforeLike = forLikeTestPage
